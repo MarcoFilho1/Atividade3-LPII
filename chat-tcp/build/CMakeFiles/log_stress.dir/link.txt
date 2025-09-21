@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/log_stress.dir/examples/log_stress.cpp.o -o log_stress  libtslog.a 
