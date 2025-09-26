@@ -1,6 +1,5 @@
-projeto:
-  nome: "Atividade 3 – Linguagem de Programação II"
-  tema: "Servidor de Chat Multiusuário (TCP)"
+  Atividade 3 – Linguagem de Programação II
+  tema: Servidor de Chat Multiusuário TCP
   etapa: "Etapa 1 — Logging Concorrente + Arquitetura"
   descricao: >
     Este repositório contém a Etapa 1 do projeto, cujo objetivo final será implementar
@@ -16,24 +15,24 @@ objetivos:
 estrutura:
   raiz: chat-tcp/
   pastas:
-    libs/libtslog: "Biblioteca de logging thread-safe"
-    src/common/logging.hpp: "Wrapper para usar a libtslog"
-    tools/log_stress.cpp: "CLI de estresse multithread"
-    docs/arquitetura.md: "Descrição da arquitetura proposta"
-    docs/sequencias.md: "Diagramas de sequência (rascunho)"
-    docs/analise_llm.md: "Relatório de análise crítica (IA/LLMs)"
-    CMakeLists.txt: "Build com CMake"
-    README.md: "Este arquivo"
+    * libs/libtslog: "Biblioteca de logging thread-safe"
+    * src/common/logging.hpp: "Wrapper para usar a libtslog"
+    * tools/log_stress.cpp: "CLI de estresse multithread"
+    * docs/arquitetura.md: "Descrição da arquitetura proposta"
+    * docs/sequencias.md: "Diagramas de sequência (rascunho)"
+    * docs/analise_llm.md: "Relatório de análise crítica (IA/LLMs)"
+    * CMakeLists.txt: "Build com CMake"
+    * README.md: "Este arquivo"
 
 build:
   cmake:
-    passos:
-      - "mkdir -p build && cd build"
-      - "cmake .. -DCMAKE_BUILD_TYPE=Release"
-      - "cmake --build . -j"
-      - "./log_stress 8 1000"
-  resultado:
-    - "Mensagens exibidas no terminal"
+    * passos:
+      * - "mkdir -p build && cd build"
+      * - "cmake .. -DCMAKE_BUILD_TYPE=Release"
+      * - "cmake --build . -j"
+      * - "./log_stress 8 1000"
+  * resultado:
+    * - "Mensagens exibidas no terminal"
 
 teste_logging:
   descricao: >
