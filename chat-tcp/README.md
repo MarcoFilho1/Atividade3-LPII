@@ -8,23 +8,38 @@ Este repositório entrega a Etapa 1 do projeto: uma biblioteca de logging concor
 [ Estrutura do projeto ]
 
 chat-tcp/
-├── CMakeLists.txt                 # Script de build (CMake) do projeto
-├── README.md                      # Este arquivo (versão .md); esta versão .txt está em anexo
-├── include/
-│   └── tslog/
-│       └── tslog.hpp              # Header público da libtslog (API, tipos e monitor da fila)
-├── src/
-│   └── tslog/
-│       ├── logger.cpp             # Thread do logger + formatação de linhas/tempo
-│       └── sinks.cpp              # Implementações dos "sinks" (console/arquivo)
-├── examples/
-│   └── log_stress.cpp             # CLI de estresse (várias threads produzindo logs)
-├── docs/
-│   └── arquitetura.md             # Diagramas/visão inicial da arquitetura do Chat TCP
-├── report/
-│   └── Relatorio_Etapa1_libtslog.md  # Relatório (análise crítica de concorrência)
-└── scripts/
-    └── mostrar_saida.sh           # Script que roda o exemplo e salva o stdout em arquivo
+
+* CMakeLists.txt — Script de build (CMake)
+
+* README.md — Descrição do projeto
+
+include/
+    tslog/
+
+* tslog.hpp — Header público da libtslog (API e monitor da fila)
+
+src/
+tslog/
+
+*logger.cpp — Thread do logger + formatação (linhas/tempo)
+
+* sinks.cpp — Implementações dos sinks (console/arquivo)
+
+examples/
+
+* log_stress.cpp — CLI de estresse (threads gerando logs)
+
+docs/
+
+* arquitetura.md — Diagramas e visão inicial da arquitetura
+
+report/
+
+* Relatorio_Etapa1_libtslog.md — Análise crítica de concorrência
+
+scripts/
+
+* mostrar_saida.sh — Executa exemplo e salva saída
 
 O que cada pasta/arquivo contém:
 
