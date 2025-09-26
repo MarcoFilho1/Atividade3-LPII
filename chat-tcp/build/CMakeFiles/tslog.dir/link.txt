@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtslog.a CMakeFiles/tslog.dir/src/tslog/logger.cpp.o CMakeFiles/tslog.dir/src/tslog/sinks.cpp.o
-/usr/bin/ranlib libtslog.a

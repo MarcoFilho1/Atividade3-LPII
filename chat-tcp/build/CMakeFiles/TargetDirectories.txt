@@ -1,8 +1,0 @@
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/tslog.dir
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/log_stress.dir
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/edit_cache.dir
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/rebuild_cache.dir
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/list_install_components.dir
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/install.dir
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/install/local.dir
-/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/install/strip.dir
