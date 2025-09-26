@@ -2,12 +2,13 @@
 #include <tslog.hpp>
 
 namespace log {
-    inline tslog::Logger& L() {
-        static tslog::Logger logger{
-            .min_level = tslog::Level::Debug,
-            .to_stdout = true,
-            .file_path = "logs/app.log"
-        };
-        return logger;
-    }
+// Singleton thread-safe do logger
+inline tslog::Logger& L() {
+    static tslog::Logger logger{
+        tslog::Level::Debug,   // nível mínimo
+        true,                  // stdout habilitado
+        "logs/app.log"         // arquivo de saída
+    };
+    return logger;
 }
+} 

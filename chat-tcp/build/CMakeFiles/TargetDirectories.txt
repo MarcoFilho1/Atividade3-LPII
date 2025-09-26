@@ -1,0 +1,5 @@
+/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/log_stress.dir
+/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/edit_cache.dir
+/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/CMakeFiles/rebuild_cache.dir
+/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/libs/libtslog/CMakeFiles/edit_cache.dir
+/home/marcofilho1/Desktop/LP2/nota3Bibu/Atividade3-LPII/chat-tcp/build/libs/libtslog/CMakeFiles/rebuild_cache.dir
