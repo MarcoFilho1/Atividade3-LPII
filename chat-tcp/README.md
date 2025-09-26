@@ -6,23 +6,23 @@
     um Servidor de Chat Multiusuário (TCP) concorrente. Nesta entrega, a ênfase está
     apenas no logging thread-safe e na definição inicial da arquitetura.
 
-objetivos:
+* objetivos:
   - Integrar a biblioteca libtslog para logging concorrente.
   - Criar um teste de estresse em CLI com múltiplas threads gravando logs simultaneamente.
   - Definir a arquitetura inicial (estrutura de pastas, headers de exemplo, diagramas).
   - Marcar a entrega com a tag v1-logging.
 
 estrutura:
-  raiz: chat-tcp/
+  * raiz: chat-tcp/
   pastas:
-    * libs/libtslog: "Biblioteca de logging thread-safe"
-    * src/common/logging.hpp: "Wrapper para usar a libtslog"
-    * tools/log_stress.cpp: "CLI de estresse multithread"
-    * docs/arquitetura.md: "Descrição da arquitetura proposta"
-    * docs/sequencias.md: "Diagramas de sequência (rascunho)"
-    * docs/analise_llm.md: "Relatório de análise crítica (IA/LLMs)"
-    * CMakeLists.txt: "Build com CMake"
-    * README.md: "Este arquivo"
+    - libs/libtslog: "Biblioteca de logging thread-safe"
+    - src/common/logging.hpp: "Wrapper para usar a libtslog"
+    - tools/log_stress.cpp: "CLI de estresse multithread"
+    - docs/arquitetura.md: "Descrição da arquitetura proposta"
+    - docs/sequencias.md: "Diagramas de sequência (rascunho)"
+    - docs/analise_llm.md: "Relatório de análise crítica (IA/LLMs)"
+    - CMakeLists.txt: "Build com CMake"
+    - README.md: "Este arquivo"
 
 build:
   cmake:
