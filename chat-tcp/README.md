@@ -50,3 +50,29 @@ documentacao:
   - docs/arquitetura.md
   - docs/sequencias.md
   - docs/analise_llm.md
+
+
+
+Etapa 2 — Protótipo CLI de Comunicação (v2-cli)
+
+Nesta etapa foi implementado o **cliente/servidor TCP mínimo** com suporte a múltiplos clientes conectados simultaneamente, além de integração com o sistema de logging thread-safe (`libtslog`).
+
+### Objetivos
+- Servidor TCP concorrente que aceita múltiplos clientes.
+- Cliente CLI que conecta, envia e recebe mensagens.
+- Retransmissão (broadcast) das mensagens para todos os clientes conectados.
+- Logging integrado (mensagens e eventos registrados).
+
+### Como executar
+1. Compile o projeto normalmente:
+   ```bash
+   cd chat-tcp
+   rm -rf build && mkdir build && cd build
+   cmake .. -DCMAKE_BUILD_TYPE=Release
+   cmake --build . -j
+   
+   Inicie o servidor em um terminal utilizando:
+   ./chat_server 5555
+
+  Abra outros terminais e inicie clientes:
+  ./chat_client 127.0.0.1 5555

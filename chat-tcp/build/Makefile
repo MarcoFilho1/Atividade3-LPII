@@ -129,6 +129,80 @@ log_stress/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_stress.dir/build.make CMakeFiles/log_stress.dir/build
 .PHONY : log_stress/fast
 
+#=============================================================================
+# Target rules for targets named chat_server
+
+# Build rule for target.
+chat_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat_server
+.PHONY : chat_server
+
+# fast build rule for target.
+chat_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/build
+.PHONY : chat_server/fast
+
+#=============================================================================
+# Target rules for targets named chat_client
+
+# Build rule for target.
+chat_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat_client
+.PHONY : chat_client
+
+# fast build rule for target.
+chat_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/build
+.PHONY : chat_client/fast
+
+src/client/main_client.o: src/client/main_client.cpp.o
+.PHONY : src/client/main_client.o
+
+# target to build an object file
+src/client/main_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/src/client/main_client.cpp.o
+.PHONY : src/client/main_client.cpp.o
+
+src/client/main_client.i: src/client/main_client.cpp.i
+.PHONY : src/client/main_client.i
+
+# target to preprocess a source file
+src/client/main_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/src/client/main_client.cpp.i
+.PHONY : src/client/main_client.cpp.i
+
+src/client/main_client.s: src/client/main_client.cpp.s
+.PHONY : src/client/main_client.s
+
+# target to generate assembly for a file
+src/client/main_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_client.dir/build.make CMakeFiles/chat_client.dir/src/client/main_client.cpp.s
+.PHONY : src/client/main_client.cpp.s
+
+src/server/main_server.o: src/server/main_server.cpp.o
+.PHONY : src/server/main_server.o
+
+# target to build an object file
+src/server/main_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/server/main_server.cpp.o
+.PHONY : src/server/main_server.cpp.o
+
+src/server/main_server.i: src/server/main_server.cpp.i
+.PHONY : src/server/main_server.i
+
+# target to preprocess a source file
+src/server/main_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/server/main_server.cpp.i
+.PHONY : src/server/main_server.cpp.i
+
+src/server/main_server.s: src/server/main_server.cpp.s
+.PHONY : src/server/main_server.s
+
+# target to generate assembly for a file
+src/server/main_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/server/main_server.cpp.s
+.PHONY : src/server/main_server.cpp.s
+
 tools/log_stress.o: tools/log_stress.cpp.o
 .PHONY : tools/log_stress.o
 
@@ -161,7 +235,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... chat_client"
+	@echo "... chat_server"
 	@echo "... log_stress"
+	@echo "... src/client/main_client.o"
+	@echo "... src/client/main_client.i"
+	@echo "... src/client/main_client.s"
+	@echo "... src/server/main_server.o"
+	@echo "... src/server/main_server.i"
+	@echo "... src/server/main_server.s"
 	@echo "... tools/log_stress.o"
 	@echo "... tools/log_stress.i"
 	@echo "... tools/log_stress.s"
