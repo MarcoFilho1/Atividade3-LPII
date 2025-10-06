@@ -1,20 +1,29 @@
-2025-10-03 12:30:04 [INFO ] Servidor ouvindo na porta 5555
-2025-10-03 12:30:56 [INFO ] Conectado a 127.0.0.1:5555
-2025-10-03 12:30:56 [INFO ] Novo cliente conectado (fd=5)
-2025-10-03 12:38:30 [INFO ] Cliente fd=5 desconectou
-2025-10-03 12:38:38 [INFO ] Novo cliente conectado (fd=6)
-2025-10-03 12:38:38 [INFO ] Conectado a 127.0.0.1:5555
-2025-10-03 12:45:32 [INFO ] Cliente fd=6 desconectou
-2025-10-03 12:45:56 [INFO ] Servidor ouvindo na porta 5555
-2025-10-03 12:46:17 [INFO ] Novo cliente conectado (fd=5)
-2025-10-03 12:46:17 [INFO ] Conectado a 127.0.0.1:5555
-2025-10-03 12:46:19 [INFO ] RX fd=5 bytes=3 msg='Oi
-'
-2025-10-03 12:46:53 [INFO ] Novo cliente conectado (fd=6)
-2025-10-03 12:46:53 [INFO ] Conectado a 127.0.0.1:5555
-2025-10-03 12:46:55 [INFO ] RX fd=6 bytes=7 msg='recebi
-'
-2025-10-03 12:51:53 [INFO ] RX fd=5 bytes=12 msg='na hora pai
-'
-2025-10-03 13:05:59 [INFO ] Cliente fd=6 desconectou
-2025-10-03 13:06:01 [INFO ] Cliente fd=5 desconectou
+2025-10-06 15:45:51 [INFO ] Servidor ouvindo na porta 5555
+2025-10-06 15:46:26 [INFO ] Conectado a 127.0.0.1:5555
+2025-10-06 15:46:26 [INFO ] Novo cliente conectado (fd=5)
+2025-10-06 15:46:27 [INFO ] RX fd=5 'test'
+2025-10-06 15:46:27 [DEBUG] Broadcast: test
+
+2025-10-06 15:46:33 [INFO ] Cliente fd=5 desconectou
+2025-10-06 15:46:35 [INFO ] Encerrando servidor...
+2025-10-06 15:46:35 [INFO ] Broadcaster finalizado
+2025-10-06 15:46:35 [INFO ] Aceitação finalizada
+2025-10-06 15:46:35 [INFO ] Servidor finalizado com sucesso
+2025-10-06 15:55:18 [INFO ] Servidor ouvindo na porta 5555
+2025-10-06 15:55:24 [INFO ] Novo cliente conectado (fd=5)
+2025-10-06 15:55:24 [INFO ] Conectado a 127.0.0.1:5555
+2025-10-06 15:55:27 [INFO ] RX fd=5 'mensagem 1'
+2025-10-06 15:55:27 [DEBUG] Broadcast: mensagem 1
+
+2025-10-06 15:55:29 [INFO ] RX fd=5 'mensagem 2'
+2025-10-06 15:55:29 [DEBUG] Broadcast: mensagem 2
+
+2025-10-06 15:55:58 [INFO ] Conectado a 127.0.0.1:5555
+2025-10-06 15:55:58 [INFO ] Novo cliente conectado (fd=6)
+2025-10-06 15:56:04 [INFO ] Broadcaster finalizado
+2025-10-06 15:56:04 [INFO ] Encerrando servidor...
+2025-10-06 15:56:04 [INFO ] Cliente fd=5 desconectou
+2025-10-06 15:56:04 [INFO ] Aceitação finalizada
+2025-10-06 15:56:04 [WARN ] Conexão encerrada pelo servidor
+2025-10-06 15:56:04 [WARN ] Conexão encerrada pelo servidor
+2025-10-06 15:56:04 [INFO ] Servidor finalizado com sucesso

@@ -76,3 +76,48 @@ Nesta etapa foi implementado o **cliente/servidor TCP mínimo** com suporte a múl
 
   Abra outros terminais e inicie clientes:
   ./chat_client 127.0.0.1 5555
+
+
+
+
+
+  # Etapa 3 — Sistema Completo (v3-final)
+
+Esta etapa conclui o desenvolvimento do **Servidor de Chat Multiusuário TCP**, implementando todas as funcionalidades obrigatórias do tema e demonstrando domínio prático dos conceitos de **programação concorrente**.
+
+---
+
+## ?? Objetivos da Etapa 3
+- Concluir as **funcionalidades obrigatórias** do tema: servidor TCP concorrente com múltiplos clientes, threads, exclusão mútua, sincronização e broadcast de mensagens.  
+- Integrar a **biblioteca de logging thread-safe (`libtslog`)** a todos os componentes.  
+- Implementar **monitor e fila concorrente** para mensagens (com semáforos e variáveis de condição).  
+- Adicionar **histórico de mensagens**, **tratamento de encerramento gracioso** e **gerenciamento de recursos**.  
+- Entregar **documentação final**:
+  - Diagrama de sequência cliente-servidor (`docs/sequencias.md`)
+  - Mapeamento requisitos ? código (`docs/mapeamento_requisitos.md`)
+  - Relatório de análise de concorrência com IA (`docs/analise_llm.md`)
+
+---
+
+## ?? Funcionalidades Implementadas
+- **Servidor TCP concorrente** aceitando múltiplos clientes.
+- **Thread de aceitação**, **thread por cliente** e **thread broadcaster** dedicada.
+- **Fila monitor** (`ThreadSafeQueue`) com `std::counting_semaphore` e `std::condition_variable`.
+- **Exclusão mútua**: `std::mutex` protege a lista de clientes e o histórico.
+- **Histórico**: novas conexões recebem as mensagens anteriores.
+- **Logging** completo com `libtslog`: conexões, mensagens, desconexões, broadcast e shutdown.
+- **Encerramento gracioso (Ctrl+C)**: sinaliza `running=false`, acorda threads e fecha sockets.
+- **Cliente CLI**: conecta, envia e recebe mensagens formatadas por linha.
+- **Build** via CMake em Linux/Windows.
+
+---
+
+## ?? Como Executar
+
+### Compilação
+```bash
+cd chat-tcp
+rm -rf build && mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build . -j
+
